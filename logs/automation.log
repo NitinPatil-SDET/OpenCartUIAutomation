@@ -1,4 +1,1 @@
-2025-08-05 22:25:57 INFO  TC0002_LoginTest:16 - ---------Starting TC0002_LoginTest--------
-2025-08-05 22:25:57 INFO  TC0002_LoginTest:18 - ---------HomePage--------
-2025-08-05 22:25:58 INFO  TC0002_LoginTest:25 - ---------LoginPage--------
-2025-08-05 22:25:58 INFO  TC0002_LoginTest:32 - ---------MyAccountPage--------
+2025-08-12 00:15:32 WARN  TC001_AccountRegistrationTest:102 - verify_account_registration skipped
