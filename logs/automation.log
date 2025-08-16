@@ -1,1 +1,77 @@
-2025-08-12 00:15:32 WARN  TC001_AccountRegistrationTest:102 - verify_account_registration skipped
+2025-08-16 12:56:29 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-08-16 12:56:30 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-08-16 12:56:30 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-08-16 12:56:30 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-08-16 12:56:32 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-08-16 12:56:32 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-08-16 12:56:32 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-08-16 12:56:32 INFO  TC001_AccountRegistrationTest:69 - verify_account_registration executed successfully
+2025-08-16 12:56:36 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-08-16 12:56:38 INFO  TC002_LoginTest:41 - ****** Finished TC_002_LoginTest *****
+2025-08-16 12:56:38 INFO  TC002_LoginTest:69 - verify_login executed successfully
+2025-08-16 13:04:45 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-08-16 13:04:46 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-08-16 13:04:46 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-08-16 13:04:46 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-08-16 13:04:48 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-08-16 13:04:48 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-08-16 13:04:48 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-08-16 13:04:48 INFO  TC001_AccountRegistrationTest:69 - verify_account_registration executed successfully
+2025-08-16 13:04:50 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-08-16 13:04:53 INFO  TC002_LoginTest:41 - ****** Finished TC_002_LoginTest *****
+2025-08-16 13:04:53 INFO  TC002_LoginTest:69 - verify_login executed successfully
+2025-08-16 13:12:27 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-08-16 13:12:27 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-08-16 13:12:28 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-08-16 13:12:28 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-08-16 13:12:29 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-08-16 13:12:29 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-08-16 13:12:29 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-08-16 13:12:29 INFO  TC001_AccountRegistrationTest:69 - verify_account_registration executed successfully
+2025-08-16 13:12:32 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-08-16 13:12:35 INFO  TC002_LoginTest:41 - ****** Finished TC_002_LoginTest *****
+2025-08-16 13:12:35 INFO  TC002_LoginTest:69 - verify_login executed successfully
+2025-08-16 13:18:53 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-08-16 13:18:54 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-08-16 13:18:55 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-08-16 13:18:55 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-08-16 13:18:56 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-08-16 13:18:56 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-08-16 13:18:56 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-08-16 13:18:56 INFO  TC001_AccountRegistrationTest:69 - verify_account_registration executed successfully
+2025-08-16 13:19:02 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-08-16 13:19:04 INFO  TC002_LoginTest:41 - ****** Finished TC_002_LoginTest *****
+2025-08-16 13:19:04 INFO  TC002_LoginTest:69 - verify_login executed successfully
+2025-08-16 14:23:43 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-08-16 14:23:44 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-08-16 14:23:44 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-08-16 14:23:44 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-08-16 14:23:46 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-08-16 14:23:46 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-08-16 14:23:46 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-08-16 14:23:46 INFO  TC001_AccountRegistrationTest:69 - verify_account_registration executed successfully
+2025-08-16 14:23:49 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-08-16 14:23:52 INFO  TC002_LoginTest:41 - ****** Finished TC_002_LoginTest *****
+2025-08-16 14:23:52 INFO  TC002_LoginTest:69 - verify_login executed successfully
+2025-08-16 14:25:42 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-08-16 14:25:42 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-08-16 14:25:43 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-08-16 14:25:43 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-08-16 14:25:44 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-08-16 14:25:44 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-08-16 14:25:44 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-08-16 14:25:44 INFO  TC001_AccountRegistrationTest:69 - verify_account_registration executed successfully
+2025-08-16 14:25:47 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-08-16 14:25:49 INFO  TC002_LoginTest:41 - ****** Finished TC_002_LoginTest *****
+2025-08-16 14:25:49 INFO  TC002_LoginTest:69 - verify_login executed successfully
+2025-08-16 14:26:44 INFO  TC001_AccountRegistrationTest:15 - ***** Starting TC001_AccountRegistrationTest  ****
+2025-08-16 14:26:44 INFO  TC001_AccountRegistrationTest:21 - Clicked on MyAccount Link.. 
+2025-08-16 14:26:44 INFO  TC001_AccountRegistrationTest:24 - Clicked on Register Link.. 
+2025-08-16 14:26:44 INFO  TC001_AccountRegistrationTest:28 - Providing customer details...
+2025-08-16 14:26:46 INFO  TC001_AccountRegistrationTest:42 - Validating expected message..
+2025-08-16 14:26:46 INFO  TC001_AccountRegistrationTest:47 - Test passed
+2025-08-16 14:26:46 INFO  TC001_AccountRegistrationTest:56 - ***** Finished TC001_AccountRegistrationTest *****
+2025-08-16 14:26:46 INFO  TC001_AccountRegistrationTest:69 - verify_account_registration executed successfully
+2025-08-16 14:26:48 INFO  TC002_LoginTest:16 - ****** Startign TC_002_LoginTest *****
+2025-08-16 14:26:51 INFO  TC002_LoginTest:41 - ****** Finished TC_002_LoginTest *****
+2025-08-16 14:26:51 INFO  TC002_LoginTest:69 - verify_login executed successfully

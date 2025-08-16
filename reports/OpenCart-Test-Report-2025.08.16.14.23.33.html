@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">OpenCart Functional Testing</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Aug 10, 2025 07:32:28 pm</span></a>
+<a href="#"><span class="badge badge-primary">Aug 16, 2025 02:23:33 pm</span></a>
 </li>
 </ul>
 </div>
@@ -71,7 +71,7 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
+<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,32 +79,75 @@
 <li class="dropdown">
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
 <ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
-<a class="dropdown-item" href="#">Master</a><a class="dropdown-item" href="#">Sanity</a>
+<a class="dropdown-item" href="#">Master</a><a class="dropdown-item" href="#">Regression</a><a class="dropdown-item" href="#">Sanity</a>
 </ul>
 </li>
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="skip" test-id="1"
+        <li class="test-item"  status="pass" test-id="1"
           author=""
-          tag="Sanity Master"
+          tag="Regression Master"
           device="">
           <div class="test-detail">
-            <p class="name">testCase.TC0002_LoginTest</p>
+            <p class="name">testCases.TC001_AccountRegistrationTest</p>
             <p class="text-sm">
-              <span>7:32:28 pm</span> / <span>00:00:00:015</span>
-              <span class="badge skip-bg log float-right">Skip</span>
+              <span>2:23:46 pm</span> / <span>00:00:00:018</span>
+              <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-skip">testCase.TC0002_LoginTest</h5>
-<span class='badge badge-success'>08.10.2025 7:32:28 pm</span>
-<span class='badge badge-danger'>08.10.2025 7:32:28 pm</span>
-<span class='badge badge-default'>00:00:00:015</span>
+<h5 class="test-status text-pass">testCases.TC001_AccountRegistrationTest</h5>
+<span class='badge badge-success'>08.16.2025 2:23:46 pm</span>
+<span class='badge badge-danger'>08.16.2025 2:23:46 pm</span>
+<span class='badge badge-default'>00:00:00:018</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+<div class="m-t-15"><span class="badge badge-pill badge-default">Regression</span>
+<span class="badge badge-pill badge-default">Master</span></div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:23:46 pm</td>
+        <td>
+          verify_account_registration executed successfully
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag="Sanity Master"
+          device="">
+          <div class="test-detail">
+            <p class="name">testCases.TC002_LoginTest</p>
+            <p class="text-sm">
+              <span>2:23:52 pm</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testCases.TC002_LoginTest</h5>
+<span class='badge badge-success'>08.16.2025 2:23:52 pm</span>
+<span class='badge badge-danger'>08.16.2025 2:23:52 pm</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
 <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
@@ -117,17 +160,10 @@
   <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
   <tbody>
       <tr class="event-row">
-        <td><span class="badge log skip-bg">Skip</span></td>
-        <td>7:32:28 pm</td>
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>2:23:52 pm</td>
         <td>
-          verify_login skipped
-        </td>
-      </tr>
-      <tr class="event-row">
-        <td><span class="badge log info-bg">Info</span></td>
-        <td>7:32:28 pm</td>
-        <td>
-          Invalid execution_env in config.properties: local;
+          verify_login executed successfully
         </td>
       </tr>
   </tbody>
@@ -148,22 +184,22 @@
 <div class="test-list">
 <div class="test-list-tools">
 <ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
-<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">2</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">3</span></a></li></ul>
 </div>
 <div class="test-list-wrapper scrollable">
 <ul class="test-list-item">
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-skip'>1</span>
+<span class='badge log pass-bg'>2</span>
 </span>
 <p class="name">Master</p>
-<p class="duration text-sm">1 tests</p>
+<p class="duration text-sm">2 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
 <h4>Master</h4>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<span status="pass" class='badge log pass-bg'>2 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -174,11 +210,18 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>19:32:28 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:23:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>testCase.TC0002_LoginTest</a>
+<a href="#" class="linked" test-id='1' id='1'>testCases.TC001_AccountRegistrationTest</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:23:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testCases.TC002_LoginTest</a>
 </td>
 </tr>
 </tbody>
@@ -188,15 +231,15 @@
 <li class="test-item">
 <div class="test-detail">
 <span class="meta">
-<span class='badge log badge-skip'>1</span>
+<span class='badge log pass-bg'>1</span>
 </span>
-<p class="name">Sanity</p>
+<p class="name">Regression</p>
 <p class="duration text-sm">1 tests</p>
 </div>
 <div class="test-contents d-none">
 <div class="info">
-<h4>Sanity</h4>
-<span status="skip" class='badge log badge-skip'>1 skipped</span>
+<h4>Regression</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
 </div>
 <table class='table table-sm mt-4'>
 <thead>
@@ -207,11 +250,44 @@
 </tr>
 </thead>
 <tbody>
-<tr class="tag-test-status" status="skip">
-<td><span class="badge log skip-bg">Skip</span></td>
-<td>19:32:28 pm</td>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:23:46 pm</td>
 <td>
-<a href="#" class="linked" test-id='1' id='1'>testCase.TC0002_LoginTest</a>
+<a href="#" class="linked" test-id='1' id='1'>testCases.TC001_AccountRegistrationTest</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log pass-bg'>1</span>
+</span>
+<p class="name">Sanity</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>Sanity</h4>
+<span status="pass" class='badge log pass-bg'>1 passed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="pass">
+<td><span class="badge log pass-bg">Pass</span></td>
+<td>14:23:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>testCases.TC002_LoginTest</a>
 </td>
 </tr>
 </tbody>
@@ -231,19 +307,19 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Aug 10, 2025 07:32:28 pm</h3>
+<h3>Aug 16, 2025 02:23:33 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Aug 10, 2025 07:32:28 pm</h3>
+<h3>Aug 16, 2025 02:23:52 pm</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 <div class="col-md-3">
@@ -265,13 +341,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'>
-<b>0</b> tests passed
+<div><small data-tooltip='100%'>
+<b>2</b> tests passed
 </small>
 </div>
 <div>
 <small data-tooltip='0%'><b>0</b> tests failed,
-<b>1</b> skipped, <b data-tooltip='0%'>0</b> others
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -288,10 +364,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div><small data-tooltip='100%'><b>2</b> events passed</small></div>
 <div>
 <small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>2</b> others
+<b data-tooltip='%'>0</b> others
 </small>
 </div>
 </div>
@@ -307,7 +383,7 @@
 </div></div>
 <script>
 var timeline = {
-"testCase.TC0002_LoginTest":0.015
+"testCases.TC001_AccountRegistrationTest":0.018,"testCases.TC002_LoginTest":0
 };
 </script>
 <div class="row">
@@ -318,19 +394,27 @@ var timeline = {
 <thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
 <tr>
 <td>Master</td>
+<td>2</td>
 <td>0</td>
 <td>0</td>
+<td>0</td>
+<td>100%</td>
+</tr>
+<tr>
+<td>Regression</td>
 <td>1</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 <tr>
 <td>Sanity</td>
-<td>0</td>
-<td>0</td>
 <td>1</td>
 <td>0</td>
-<td>0%</td>
+<td>0</td>
+<td>0</td>
+<td>100%</td>
 </tr>
 </tbody>
 </table></div>
@@ -383,10 +467,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 0,
+passParent: 2,
 failParent: 0,
 warningParent: 0,
-skipParent: 1,
+skipParent: 0,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -400,11 +484,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 0,
+passEvents: 2,
 failEvents: 0,
 warningEvents: 0,
-skipEvents: 1,
-infoEvents: 1
+skipEvents: 0,
+infoEvents: 0
 };
 </script>        </div>
       </div>
