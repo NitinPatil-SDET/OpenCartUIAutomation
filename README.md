@@ -3,6 +3,9 @@
 
 # 🚀 OpenCart UI Automation Framework
 
+## About Project
+This project is an automation framework built using Java, Selenium, TestNG, and integrated with Jenkins & Docker.
+
 ![Framework](ProjectImage/Hybrid%20Automation%20framework.png)
 
 [![Java](https://img.shields.io/badge/Java-17-blue?logo=java)](https://www.oracle.com/java/)
@@ -11,6 +14,10 @@
 [![TestNG](https://img.shields.io/badge/TestNG-Framework-yellowgreen)](https://testng.org/)
 [![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker)](https://www.docker.com/)
 [![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-red?logo=jenkins)](https://www.jenkins.io/)
+[![GitHub repo](https://img.shields.io/badge/repo-GitHub-blue)](https://github.com/NitinPatil-SDET/OpenCartUIAutomation)
+![Git](https://img.shields.io/badge/Version%20Control-Git-orange?logo=git)
+
+
 
 ---
 
@@ -65,7 +72,7 @@ The framework supports:
 * **Automation Tool**: Selenium WebDriver
 * **Logging**: Log4j2
 * **Reporting**: Extent Reports + TestNG HTML Reports
-* **CI/CD**: Jenkins
+* **CI/CD**: Jenkins, Git, GitHub
 * **Containerization**: Docker + Selenium Grid
 
 ---
@@ -111,35 +118,6 @@ run.bat
 
 ## 🐳 Docker + Selenium Grid Execution
 
-### docker-compose.yaml
-
-```yaml
-version: "3"
-services:
-  selenium-hub:
-    image: selenium/hub:4.0.0
-    container_name: selenium-hub
-    ports:
-      - "4444:4444"
-
-  chrome:
-    image: selenium/node-chrome:4.0.0
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-
-  firefox:
-    image: selenium/node-firefox:4.0.0
-    depends_on:
-      - selenium-hub
-    environment:
-      - SE_EVENT_BUS_HOST=selenium-hub
-      - SE_EVENT_BUS_PUBLISH_PORT=4442
-      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
-```
 
 ### Run Grid
 
@@ -198,7 +176,23 @@ mvn clean test -DsuiteXmlFile=master.xml
 
 ---
 
-✨ Author: **Nitin Patil (SDET)**
+## 👨‍💼 Author  
+
+### Nitin Patil  
+
+<p align="left">
+  <a href="https://github.com/NitinPatil-SDET" target="_blank">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+  <a href="https://www.linkedin.com/in/nitinpatilsdet/" target="_blank">
+    <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+  </a>
+  <a href="mailto:nitinpatilsdet@gmail.com">
+    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
+  </a>
+</p>
+
+
 
 ---
 
