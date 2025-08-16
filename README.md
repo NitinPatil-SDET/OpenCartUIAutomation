@@ -1,12 +1,18 @@
-Perfect 👍 you’ve shared a full **framework structure**. Let’s create a professional **`README.md`** for your GitHub project. This will help others (and you in future) to quickly understand and run the framework.
-
-Here’s a clean draft:
 
 ---
 
 # 🚀 OpenCart UI Automation Framework
 
 ![Framework](ProjectImage/Hybrid%20Automation%20framework.png)
+
+[![Java](https://img.shields.io/badge/Java-17-blue?logo=java)](https://www.oracle.com/java/)
+[![Selenium](https://img.shields.io/badge/Selenium-4.0-brightgreen?logo=selenium)](https://www.selenium.dev/)
+[![Maven](https://img.shields.io/badge/Maven-3.9-orange?logo=apache-maven)](https://maven.apache.org/)
+[![TestNG](https://img.shields.io/badge/TestNG-Framework-yellowgreen)](https://testng.org/)
+[![Docker](https://img.shields.io/badge/Docker-Enabled-blue?logo=docker)](https://www.docker.com/)
+[![Jenkins](https://img.shields.io/badge/Jenkins-CI%2FCD-red?logo=jenkins)](https://www.jenkins.io/)
+
+---
 
 ## 📌 Overview
 
@@ -19,21 +25,24 @@ The framework supports:
 * ✅ Cross-browser execution
 * ✅ Parallel execution with Selenium Grid & Docker
 * ✅ Jenkins CI/CD integration
-* ✅ Extent Reporting & Screenshot on Failure
+* ✅ Extent Reporting & TestNG Listeners
 
 ---
 
 ## 📂 Project Structure
 
 ```
-├── ProjectImage/                  → Framework screenshots
-├── TestData/                      → Test data files (Excel)
+
+
 ├── src/test/java/                 → Test scripts & page objects
 │   ├── pageObjects/               → POM classes
 │   ├── testBase/                  → Base setup class
 │   ├── testCases/                 → TestNG test cases
 │   └── utilities/                 → Helper classes (Excel, Reports)
 ├── src/test/resources/            → Config & log4j files
+│   ├── config.properties/         → URL/PWD/Enviroment
+│   └── log4j2.xml/                → Log4j execution logs
+├── TestData/                      → Test data files (Excel)
 ├── reports/                       → HTML Extent Reports
 ├── screenshots/                   → Captured screenshots on failures
 ├── logs/                          → Log4j execution logs
@@ -52,7 +61,7 @@ The framework supports:
 
 * **Language**: Java
 * **Build Tool**: Maven
-* **Test Framework**: TestNG
+* **Test Framework**: Hybrid (POM + DataDriven + KeyWord Driven)
 * **Automation Tool**: Selenium WebDriver
 * **Logging**: Log4j2
 * **Reporting**: Extent Reports + TestNG HTML Reports
@@ -66,13 +75,11 @@ The framework supports:
 ### 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/OpenCartUIAutomation.git
+git clone https://github.com/NitinPatil-SDET/OpenCartUIAutomation.git
 cd OpenCartUIAutomation
 ```
 
 ### 2️⃣ Install dependencies
-
-Make sure you have **Maven** installed. Run:
 
 ```bash
 mvn clean install
@@ -95,7 +102,6 @@ mvn clean test -DsuiteXmlFile=crossbrowser.xml
 ```
 
 * **Using run.bat**
-  Double-click `run.bat` or from terminal:
 
 ```bash
 run.bat
@@ -105,13 +111,43 @@ run.bat
 
 ## 🐳 Docker + Selenium Grid Execution
 
-1. Start Selenium Grid using Docker Compose:
+### docker-compose.yaml
+
+```yaml
+version: "3"
+services:
+  selenium-hub:
+    image: selenium/hub:4.0.0
+    container_name: selenium-hub
+    ports:
+      - "4444:4444"
+
+  chrome:
+    image: selenium/node-chrome:4.0.0
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+
+  firefox:
+    image: selenium/node-firefox:4.0.0
+    depends_on:
+      - selenium-hub
+    environment:
+      - SE_EVENT_BUS_HOST=selenium-hub
+      - SE_EVENT_BUS_PUBLISH_PORT=4442
+      - SE_EVENT_BUS_SUBSCRIBE_PORT=4443
+```
+
+### Run Grid
 
 ```bash
 docker-compose up -d
 ```
 
-2. Run tests on Grid:
+### Execute Tests on Grid
 
 ```bash
 mvn clean test -DsuiteXmlFile=docker-grid.xml
@@ -121,10 +157,10 @@ mvn clean test -DsuiteXmlFile=docker-grid.xml
 
 ## 📊 Reports & Logs
 
-* **Extent Reports**: `reports/`
-* **Screenshots on Failure**: `screenshots/`
-* **Log file**: `logs/automation.log`
-* **TestNG Reports**: `test-output/`
+* **Extent Reports** → `reports/`
+* **Screenshots on Failure** → `screenshots/`
+* **Log file** → `logs/automation.log`
+* **TestNG Reports** → `test-output/`
 
 ![Extent Report](ProjectImage/OpencartExtentReportResult.png)
 
@@ -132,13 +168,14 @@ mvn clean test -DsuiteXmlFile=docker-grid.xml
 
 ## 🔄 CI/CD with Jenkins
 
-1. Install Jenkins & configure Maven + Git in `Global Tool Configuration`
+1. Install Jenkins & configure Maven + Git in **Global Tool Configuration**
 2. Create a new Jenkins Job → Pull this repo
 3. Add **Build Step**:
 
-   ```bash
-   mvn clean test -DsuiteXmlFile=master.xml
-   ```
+```bash
+mvn clean test -DsuiteXmlFile=master.xml
+```
+
 4. View execution & reports in Jenkins
 
 ![Jenkins](ProjectImage/JenkinsConfiguration.png)
@@ -165,4 +202,3 @@ mvn clean test -DsuiteXmlFile=docker-grid.xml
 
 ---
 
-Would you like me to also add **badges** (like Maven build, Docker, Jenkins, TestNG) at the top of the README for a more professional GitHub look?
